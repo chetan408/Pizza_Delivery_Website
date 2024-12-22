@@ -19,59 +19,23 @@
 
 <body>
 
-	<nav class="navbar navbar-expand-lg  bg-dark d-flex justify-content-center">
-  <div class="container-fluid d-flex align-items-center">
-   
-      <ul class="navbar-nav " >
-		<li class="nav-item">
-          <a class="navbar-brand" href="#">
-			<img src=" images\p1.jpg" alt="img" 
-				style="width: 50px; height: 45px; border-radius: 50%;" class="rounded-circle"></a>
-        </li>
-		<li class="nav-item">
-          <a class="nav-link active text-warning"  href=" ">PizZa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  text-white"  href=" ">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="Pizza_menus.html">Pizza</a>
-        </li>
-		<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" >
-            Other Snaks
-          </a>
-          <ul class="dropdown-menu bg-dark">
-            <li><a class="dropdown-item text-light" href="#">Hot Chocolate</a></li>
-            <li><a class="dropdown-item text-light" href="#">Fries</a></li>
-            <li><a class="dropdown-item text-light" href="#">Taco</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="Pizza_AboutUs.html">About Us</a>
-        </li>
-		<li class="nav-item">
-          <a class="nav-link text-white" href="Pizza_contactUs.html">Contact Us</a>
-        </li>
-      </ul>
-	  
-	  <ul >
-		<li class="nav-item  float-end">
-			<span class="badge bg-info"> View order details -->  </span>
-			    <a class="navbar-brand" href="#" data-bs-toggle="collapse" data-bs-target="#progressBar">
-        <img src="images/Delivery_bike.jpg" alt="img" style="width: 50px; height: 35px;" class="img-thumbnail">
-    </a>
+	<div id="navbar-container"></div>
 
-    <div id="progressBar" class="collapse mt-3">
-        <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark" style="width:75%;">5min away</div>
-        </div>
-    </div>
+  <script>
+    // Function to load the navbar.html into the page
+    function loadNavbar() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+    }
 
-        </li>
-	  </ul>
-    </div>
-</nav>
+    // Load navbar when the page loads
+    loadNavbar();
+  </script>
+
 
 	
 	<h1 class="float-start mt-5 ms-3 bg-light rounded ps-1 pe-1"> Super Delivery <span class="text-warning">PizZa's</span> For you<span class="text-warning">!</span></h1>

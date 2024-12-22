@@ -5,3 +5,82 @@
         background-color: #343a40; 
     }
 
+    /* General Navbar Styling */
+.navbar {
+    border-bottom: 2px solid #f1f1f1;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar:hover {
+    background-color: #333; /* Slightly darker shade when hovered */
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 15px; /* Space between items */
+  }
+  
+  /* Hover Effects */
+  .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff9900; /* Orange color for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+  }
+  
+  .dropdown-item {
+    color: #fff;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #ff9900;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Badge Styling */
+  .badge.bg-info {
+    background-color: #00b0ff;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .badge.bg-info:hover {
+    background-color: #0091cc;
+  }
+  
+  /* Navbar Logo Image Hover Effect */
+  .navbar-brand img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Progress bar hover effect */
+  .progress-bar {
+    transition: width 0.3s ease;
+  }
+  
+  .progress-bar:hover {
+    width: 80%; /* Slight increase in progress on hover */
+  }
+  
+
