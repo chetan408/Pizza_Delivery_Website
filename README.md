@@ -2,7 +2,6 @@
 # pizza delivery site
 
 
-
 ## Demo
 
 https://chetan408.github.io/Pizza_Delivery_Website/
